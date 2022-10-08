@@ -1,0 +1,194 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+}
+
+.bg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    text-decoration: none;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    background-size: 104vw auto;
+ 
+}
+
+.card{
+    background-image: url(./images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    width: 28rem;
+    align-self: center;
+    border-radius: 20px;
+    box-shadow: 0px 3px 20px -5px black;
+}
+.info{
+    margin-top: 49.4%;
+    background-color: #fff;
+    padding: 10px 55px;
+    border-radius: 0 0 20px 20px;
+}
+
+.info a{
+    text-decoration: none;
+}
+
+
+.heading{
+    font-weight: 900;
+    color:  hsl(223, 47%, 23%);
+}
+
+
+.amount{
+    display: grid;
+    background-color: hsl(225, 100%, 98%);
+    grid-template-columns: 0fr 2fr 3fr;
+    column-gap: 12px;
+    padding-right: 18px;
+    padding-left: 12px;
+    border-radius: 14px;
+}
+
+.music-logo{
+    align-self: center;
+    width:40px;
+}
+
+.pack{
+    font-weight: 700;
+    color:  hsl(223, 47%, 23%);
+}
+
+.change{
+    align-self: center;
+    text-align: end;
+    font-weight: 700;
+}
+.change a{
+    text-decoration: underline;
+}
+
+.change a:hover{
+    text-decoration: none;
+    color: hsl(245, 58%, 60%);
+}
+
+.first-btn{
+    padding: 15px;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 13px;
+    font-size: 14px;
+    font-weight: 900;
+    color: #fff;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0px 3px 20px -5px hsl(245, 75%, 52%);
+}
+
+.first-btn:hover{
+    cursor: pointer;
+    background-color: hsl(245, 58%, 60%);
+    box-shadow: 0px 3px 20px -5px hsl(245, 58%, 60%);
+}
+
+.cancel{
+    font-weight: 700;
+}
+.cancel a{
+    color: hsl(224, 23%, 55%);;
+}
+
+.cancel a:hover{
+    color: hsl(223, 47%, 23%);
+    box-shadow: 2px 50px hsl(245, 75%, 52%);
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+    @media screen and (max-width:500px){
+        .card{
+            background-size: contain;
+            width: 24rem;
+        }
+        .amount{
+            grid-template-columns: 0fr 2fr 1fr;
+        }
+    }
+    @media screen and (max-width:400px){
+        .card{
+            background-size: contain;
+            width: 80%;
+        }
+        .info{
+            padding: 10px 20px;
+        }
+    }
+    
+
+    @media screen and (max-width:346px){
+        .card{
+            background-size: contain;
+            width: 85%;
+        }
+        .info{
+            padding: 10px 5px;
+        }
+    }
+    @media screen and (max-width:300px){
+        .card{
+            background-size: contain;
+            width: 85%;
+        }
+        .amount{
+            grid-template-columns: 0fr 2fr
+        }
+    }
+
+    @media screen and (max-width:213px){
+        .card{
+            background-size: contain;
+            width: 85%;
+        }
+        .change{
+            text-align: center;
+        }
+        .amount{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: block;
+        }
+
+        .pack{
+            font-size: 12px;
+        }
+        .change a{
+            font-size: 11px;
+        }
+        .info p{
+            font-size: 12px;
+        }
+        .heading{
+            margin: 0;
+            font-size: 23px;
+        }
+
+        .first-btn{
+            font-size: 11px;
+        }
+        .cancel a{
+            font-size: 11px;
+            margin-bottom: 0;
+        }
+    }
